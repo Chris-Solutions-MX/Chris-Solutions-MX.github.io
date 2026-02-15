@@ -1,0 +1,117 @@
+/* Fuente personalizada */
+@font-face {
+  font-family: 'SM';
+  src: url('https://chris-solutions-mx.github.io/Fonds/SM.otf');
+}
+
+/* Estilos generales del body */
+body {
+  margin: 0;
+  font-family: 'SM', sans-serif;
+  background: #f000; /* color original respetado */
+  color: #3b3937;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: #f0f0f0;
+}
+
+header img {
+  max-height: 200px; /* altura máxima */
+  width: 100%;       /* ancho adaptable */
+  max-width: 600px;  /* evita que crezca demasiado en pantallas grandes */
+  height: auto;      /* mantiene proporción */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: #f4f4f4;
+  padding: 10px;
+}
+
+nav a {
+  color: #919191;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #3b3937;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Contenedores */
+.container {
+  padding: 30px 20px;
+}
+
+/* Tarjetas (ahora compatible con <a> o div) */
+.card {
+  display: block;            /* hace que los <a> se comporten como divs */
+  text-decoration: none;     /* quita subrayado de enlaces */
+  color: #3b3937;            /* mantiene tu color original */
+  background: #f2f2f2;       /* color original */
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px 0;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);    /* zoom al pasar el mouse */
+}
+
+/* Botones */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #000;  /* color original respetado */
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: black;   /* color original respetado */
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #919191;
+  color: white;
+}
+
+/* Responsividad adicional */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .hero {
+    padding: 40px 10px;
+  }
+  
+  .container {
+    padding: 20px 10px;
+  }
+}
