@@ -1,7 +1,8 @@
 /* Fuente personalizada */
-@font-face {
+@@font-face {
   font-family: 'SM';
   src: url('https://chris-solutions-mx.github.io/Fonds/SM.otf');
+  font-display: swap;
 }
 
 /* Estilos generales del body */
