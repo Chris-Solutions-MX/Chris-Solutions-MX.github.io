@@ -417,7 +417,7 @@ img {
 
 /* Footer */
 .footer {
-    background-color: var(--nude-dark);
+    background-color: #F4F4F4;
     color: var(--text-dark);
     padding: 70px 0 0;
 }
@@ -430,7 +430,7 @@ img {
 }
 
 .footer-logo img {
-    height: 50px;
+    height: 100px;
     width: auto;
     margin-bottom: 20px;
 }
